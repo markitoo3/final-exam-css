@@ -44,7 +44,7 @@ body {
     height: 40px;
     position: fixed;
     display: flex;
-    padding: 0 10px 0 10px;
+    padding: 0 15px 0 15px;
     justify-content: space-between;
     align-items: center;
     background-color: #1a24fb;
@@ -54,13 +54,15 @@ body {
 }
 
 .container {
-    position: absolute;
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     max-width: 1280px;
     align-content: center;
     top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .cards {
@@ -90,10 +92,13 @@ body {
 
 .writer-container {
     font-family: 'Overpass', sans-serif;
+    position: relative;
+    bottom: 20px;
     font-size: 12px;
     letter-spacing: 0.2em;
     font-weight: 400;
     color: #1a24fb;
+    margin-bottom: 20px;
 }
 
 .titles-container {
